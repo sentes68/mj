@@ -1,0 +1,728 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+:root {
+  --main-gray: #ebebeb;
+  --main-grayS: #a8dadc;
+  --main-white: #ffffff;
+  --main-beer: #bdbc9d;
+}
+
+body {
+  background-color: var(--main-gray);
+  /* min-width: 1200px; */
+}
+
+.btn {
+  background-color: var(--main-gray);
+  color: black;
+  border: none;
+  transition: 150ms linear;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  outline: 3px solid #e6b90a;
+  transform: scale(1.1);
+}
+
+/* -----------------------HEADER---------------------*/
+/* ----------------NAV------------------*/
+nav {
+  background-color: var(--main-grayS);
+  height: auto;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 0.5rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+
+.hMenu {
+  display: none;
+}
+
+.logo img {
+  height: 55px;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.nav-menu li {
+  font-weight: bold;
+  font-size: 1.1rem;
+  letter-spacing: 0.2rem;
+}
+
+.nav-menu li a:hover {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.475);
+}
+
+.cart-area {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.nav-icon img {
+  width: 1.2rem;
+}
+
+.cart-area span,
+.cart-text {
+  font-size: 1.1rem;
+}
+
+.cart-area span:hover {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.475);
+}
+
+/* -----------------------MAIN---------------------*/
+
+/* -------------------BANNER------------------*/
+
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.425), rgba(0, 0, 0, 0.425)),
+    url(../img/banner.png);
+  height: 20rem;
+  background-repeat: none;
+  background-position: center;
+  color: var(--main-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.banner h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px black;
+  letter-spacing: 0.5rem;
+}
+
+.banner h2 {
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+}
+
+/* -----------------------MAIN---------------------*/
+
+/* -------------------BANNER------------------*/
+#welcome {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto 0 auto;
+  width: auto;
+  padding: 0 1rem 2rem 1rem;
+  gap: 2.5rem;
+  height: auto;
+  margin-top: -6rem;
+}
+
+.welcome-card {
+  background-color: var(--main-white);
+  width: 25rem;
+  height: 30rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 2px 2px 2.6px;
+  outline: 8px solid white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: var(--main-white);
+}
+
+.welcome-card button {
+  width: 8.2rem;
+  height: 3rem;
+  text-shadow: 1px 1px 1px black;
+  font-size: 1.2rem;
+}
+
+.welcome-card h3 {
+  font-size: 1.9rem;
+  text-shadow: 1px 1px black;
+  margin-bottom: 1rem;
+}
+
+.products {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.425), rgba(0, 0, 0, 0.425)),
+    url(../img/zene.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.brewing {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.425), rgba(0, 0, 0, 0.425)),
+    url(../img/stepbystep.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hagyomanyos {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.425), rgba(0, 0, 0, 0.425)),
+    url(../img/hagyomanyos.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* ----------------action section --------------*/
+
+#osztalyaink {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  text-align: center;
+  margin: 4rem 0 10rem 0;
+}
+
+#osztalyaink h2,
+#tips h2 {
+  font-size: 2.5rem;
+  letter-spacing: 0.5rem;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.action-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 5rem 2rem 5rem;
+  gap: 2.5rem;
+}
+
+.action-card {
+  background-color: var(--main-white);
+  width: 22rem;
+  height: auto;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.action-card img {
+  width: 100%;
+}
+
+.large {
+  width: 50rem;
+
+}
+.osztalynevsor{
+  text-align: center;
+  align-items: center;
+  background-color: #a8dadc;
+  width: 90%;
+  margin: auto;
+}
+
+
+.large p {
+  margin-top: 2rem;
+}
+
+.verylarge {
+  width: 90%;
+  border: 4px solid var(--main-grayS);
+  margin-bottom: 3rem;
+}
+
+.verylarge p {
+  padding-top: 0.2rem;
+  padding-left: 0.2rem;
+}
+
+.action-card h3 {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 0.1rem;
+}
+
+.osztalyvezeto {
+  font-size: .8rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  color: red;
+  text-shadow: 1px 1px 1px black;
+}
+
+/* -------- subscribe section -----------*/
+
+#subscribe {
+  padding: 5rem;
+}
+
+.subscribe-card {
+  background-color: var(--main-white);
+  width: 100%;
+  height: 50rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.616), rgba(0, 0, 0, 0.616)),
+    url(../img/frombg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: var(--main-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.subscribe-card h2 {
+  font-size: 2rem;
+  text-shadow: 1px 1px 1px black;
+}
+
+.input-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  width: 100%;
+  height: auto;
+}
+
+form {
+  text-align: center;
+}
+
+.subscribe-card input[type="text"],
+.subscribe-card input[type="email"] {
+  background-color: rgba(0, 0, 0, 0.09);
+  border: 1px solid var(--main-white);
+  width: 15rem;
+  height: 4rem;
+  padding: 0 1rem;
+  font-size: 1rem;
+  color: var(--main-white);
+  margin: 0.2rem;
+}
+
+.subscribe-card input::placeholder {
+  color: var(--main-white);
+  font-size: 1.3rem;
+}
+
+.licence {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem 4rem;
+  margin: 2rem o;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.licence input[type="checkbox"] {
+  margin-left: 1.2rem;
+  width: 1.5rem;
+}
+
+input[type="submit"] {
+  width: 15rem;
+  height: 3rem;
+  font-size: 1.5rem;
+}
+
+/* ---------- tip section --------*/
+
+#tips h2 {
+  text-align: center;
+  margin: 5rem 0 4rem 0;
+}
+
+.tips-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem 8rem 1rem;
+}
+
+.tips-card {
+  background-color: var(--main-white);
+  width: 21rem;
+  min-height: 30rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.big-card {
+  min-height: 35rem;
+  width: 22rem;
+  background-color: var(--main-white);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.tips-card img {
+  width: 100%;
+}
+
+.tips-card h3 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.date {
+  margin: 0rem 0 1.5rem 0.2rem;
+}
+
+.text {
+  padding: 0rem 0.5rem 1rem 0.5rem;
+}
+
+.tips-card button {
+  width: 9rem;
+  height: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* ----------------------FOOTER---------------------------- */
+
+footer {
+  background-color: var(--main-grayS);
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+}
+
+.footer-menu {
+  padding-top: 1.5rem;
+}
+
+.footer-list {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.footer-list li {
+  list-style: none;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  letter-spacing: 0.2rem;
+}
+
+.footer-list li:hover {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.479);
+}
+
+.soc-icon ul {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  padding: 1.5rem 0 0.5rem 0;
+}
+
+.soc-icon ul li {
+  display: flex;
+  list-style: none;
+}
+
+.fa-brands {
+  transition: 100ms linear;
+}
+
+.fa-brands:hover {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.479);
+  transform: scale(1.3);
+}
+
+footer p {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+
+/* ------------------ Aktualis Settings ------------------- */
+
+
+.aktualis {
+  font-size: 12px;
+  min-height: 80vh;
+}
+
+.aktualis li {
+  padding-left: 2rem;
+  list-style-type: none;
+  font-weight: normal;
+  font-size: 0.8rem;
+}
+
+.aktualis ul li {
+  padding-left: 1rem;
+  list-style-type: none;
+  font-weight: bold;
+  font-size: 1em;
+  padding-top: 0.4rem;
+  color: black;
+}
+
+
+.aktualis ul li ul li {
+  padding-left: 1rem;
+  padding-top: 0;
+  list-style-type: none;
+  font-weight: bold;
+  font-size: 0.90em;
+  color: blue;
+}
+
+.aktualis li p {
+  padding: 0.2em 1em;
+  margin: 0;
+  font-size: 1em;
+}
+
+#kapcsolat ul {
+  list-style-type: none;
+  margin: 0;
+  margin-top: 1rem;
+  padding: 0 1rem;
+  font-size: 1em;
+}
+
+
+.aktualis p {
+  font-size: 1.4em;
+  font-weight: bold;
+  padding: 0.2rem 1.2rem;
+  margin-bottom: 0.2rem;
+  background-color: lightgrey;
+  border-radius: 0.5rem;
+}
+
+.aktualis h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 2em;
+  color: red;
+  padding-top: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.aktualis h3 {
+  margin-top: 1.5rem;
+}
+
+.oklevel {
+  width: 12%;
+
+}
+
+#oklevelek {
+  margin-top: 1rem;
+}
+
+#oklevelek h2 {
+  text-align: center;
+  font-size: 2.2em;
+  padding: 0.5rem;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  background-color: lightgrey;
+  width: 30rem;
+  border-radius: 2rem;
+}
+
+/* ------------------ Resposive Sttings ------------------- */
+
+@media only screen and (max-width: 1200px) {
+  .nav-menu {
+    gap: 1.2rem;
+  }
+
+  .nav-menu li {
+    font-size: 1rem;
+  }
+
+  .cart-area {
+    gap: 1rem;
+  }
+
+  .nav-icon img {
+    width: 0.9rem;
+  }
+
+  .footer-list {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .hMenu {
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    padding-left: 1.2rem;
+  }
+
+  .menu-button {
+    background-color: var(--main-beer);
+    color: black;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .menu-button img {
+    width: 2rem;
+  }
+
+  .menu-button:hover {
+    cursor: pointer;
+    outline: 3px solid #e6b00a;
+    transform: scale(1.1);
+  }
+
+  .logo {
+    width: 33.33%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .cart-area {
+    width: 33.33%;
+    justify-content: flex-end;
+  }
+
+  .banner h1 {
+    font-size: 4.2rem;
+    letter-spacing: 0.3rem;
+  }
+
+  #subscribe {
+    padding: 1rem;
+  }
+
+  .subscribe-card input[type="text"] {
+    margin-top: 0.5rem;
+  }
+
+  .licence {
+    padding: 1rem;
+  }
+
+  .tips-cards {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .tips-card {
+    width: 80%;
+    height: auto;
+  }
+
+  .big-card {
+    width: 80%;
+    height: auto;
+    min-height: 0;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .banner {
+    height: 60vh;
+  }
+
+  .banner h1 {
+    font-size: 3rem;
+    margin-top: 1.5rem;
+  }
+
+  .banner h2 {
+    font-size: 1.1rem;
+  }
+
+  .cart-text {
+    display: none;
+  }
+
+  .nav-icon img {
+    width: 1.5rem;
+  }
+
+  #action h2,
+  #tip h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  #welcome {
+    margin-top: -2rem;
+  }
+
+  .banner h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .banner h2 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .subscribe-card input[type="text"] {
+    width: 97%;
+    margin: 0.5rem;
+  }
+
+  .licence {
+    padding: 0.5rem;
+  }
+
+  .tips-card {
+    width: 100%;
+    margin: 0 0.1rem;
+  }
+}
